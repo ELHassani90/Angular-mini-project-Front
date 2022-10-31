@@ -1,0 +1,13 @@
+<div class="container">
+<h1>Create Article</h1>
+<form #articleForm="ngForm"  (ngSubmit)="getArticleForm(articleForm.value)">
+    <input type="text" ngModel name="name"  placeholder="Article Name">
+    <br><br>
+    <input type="text" ngModel name="price"  placeholder="Price">
+    <br><br>
+    <input type="file" ngModel name="img"  placeholder="Picture">
+    <br><br>
+    <input type="submit" value="Create Article">
+</form>
+
+</div>

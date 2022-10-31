@@ -1,0 +1,16 @@
+
+<div class="container">
+    <h1 *ngIf="articleList == null" >Ad Articles</h1>
+    <div class="article" *ngFor="let item of articleList"> {{item.name}}
+        <div class="containerr">
+            <img class="image" src= "{{'data:image/jpg;base64,' + item.img}}"  width="150px" height="150px">
+            <div class="bottom-right">{{item.price}} MAD</div>
+        </div>    
+    </div>
+
+    
+    <div class="btn-holder-st">
+      <button routerLink="/CreatArticlePopUp" type="button">Click</button>
+    </div>
+    
+</div>
